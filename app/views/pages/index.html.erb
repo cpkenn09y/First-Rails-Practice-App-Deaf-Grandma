@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Deaf Grandma</h1>
+  <% if @grandma %>
+    <p>Grandma says: "<span id="grandma_says"><%= @grandma %></span>"</p>
+  <% end %>
+  <form action="/grandma" method="post">
+    Say something to Grandma:
+    <br>
+    <input type="text" name="user_input">
+    <input type="submit" value="Say it!">
+  </form>
+</div>
+
+
+
+<!-- <h1> LEARNING RAILS, YAY! </h1> -->
+
+<% if false %>
+<%= image_tag('rails.png') %>
+
+<%= link_to "Routes", rails_routes_path %>
+<% end %>
